@@ -1,0 +1,85 @@
+.welcome {
+  color: #4f4e88;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 48px 40px;
+  margin-bottom: 0;
+}
+.uline {
+  margin: 0px 40px;
+  margin-bottom: 24px;
+}
+.flex_form {
+  font-weight: 500;
+  /* width: 80%; */
+  margin: 0px 40px;
+  display: flex;
+  justify-content: stretch;
+}
+::placeholder {
+  color: #dbdbdb;
+  font-size: 21px;
+  font-weight: 500;
+}
+input[type="text"] {
+  outline: 0;
+  font-size: 21px;
+  font-weight: 500;
+  font: #4f4e88;
+}
+input {
+  background: none;
+}
+.form_group {
+  margin-bottom: 16px;
+}
+
+label.payment {
+  margin: 40px;
+}
+label {
+  color: #909090;
+  font-size: 14px;
+  font-weight: 500;
+  /* margin-bottom: 0; */
+}
+.stripe {
+  background-color: #3063f2;
+  color: white;
+  font-weight: 500;
+  width: auto;
+  padding: 12px 40px;
+  margin: 0 40px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+}
+.save {
+  background-color: #909090;
+  color: white;
+  font-weight: 500;
+  width: auto;
+  padding: 12px 40px;
+  margin: 8px 40px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+}
+
+.products_div {
+  margin: 0 40px;
+  padding: 0 30px;
+}
+
+.btn_primary {
+  background-color: #3063f2;
+  color: white;
+  font-weight: 500;
+  width: 60%;
+  padding: 10px 40px;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+}

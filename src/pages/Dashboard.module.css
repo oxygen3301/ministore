@@ -1,0 +1,125 @@
+.welcome {
+  color: #4f4e88;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 48px 0;
+}
+.orders {
+  color: #4f4e88;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 24px 0;
+}
+
+.conn_image {
+  width: 250px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.info {
+  text-align: center;
+  font-weight: 500;
+  color: #969696;
+  line-height: 24px;
+  padding-bottom: 32px;
+}
+.btn_primary {
+  background-color: #3063f2;
+  color: white;
+  font-weight: 500;
+  width: 50%;
+  padding: 14px 40px;
+  margin: auto;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section {
+  margin: 0 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.card1 {
+  background-color: #3063f2;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+}
+.site_link {
+  font-size: 16px;
+  text-decoration: underline;
+}
+.big_card_desc {
+  font-size: 28px;
+  font-weight: 500;
+}
+.card2 {
+  background-color: #4aa669;
+  width: 50%;
+  margin-right: 10px;
+}
+.card3 {
+  background-color: #ff9900;
+  width: 50%;
+}
+.card4 {
+  background-color: #ededed;
+  padding-bottom: 10px;
+  color: #635bff;
+}
+.card4 h4 {
+  width: 55%;
+  font-weight: 500;
+}
+.logo {
+  float: right;
+  width: 120px;
+}
+.secondrow {
+  display: flex;
+  justify-content: stretch;
+}
+.mini,
+.store {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #3063f2;
+  text-align: center;
+}
+.store {
+  color: #fab400;
+}
+
+.splash {
+  width: 150px;
+  margin: auto;
+  margin-top: 200px;
+}
+.login {
+  background-color: #3063f2;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  padding: 12px 40px;
+  margin: auto;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+}

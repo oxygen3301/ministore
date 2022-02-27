@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  /* background: white; */
+  border: 2px solid #4f4e88;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 20px;
+  align-items: center;
+}
+.container {
+}
+.name {
+  /* flex-grow: 1; */
+  font-weight: 500;
+  font-size: 18px;
+}
+.amount {
+  background: #4aa669;
+  border-radius: 4px;
+  color: white;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+.face {
+  width: 36px;
+}
+.email {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.address {
+  /* font-weight: 500; */
+  font-size: 14px;
+}
