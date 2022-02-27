@@ -1,5 +1,5 @@
 # Ministore
-## _Demcratizing e-commerce for everyone_
+## _Democratizing e-commerce for everyone_
 
 ![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/Ss1.jpg)
 
@@ -14,10 +14,10 @@ This is a combination of a no-code and e-commerce platform, our users can drop i
 
 ---
 ## Inside the App
-![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/Ss2.jpg)
-![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/Ss3.jpg)
-![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/Ss4.jpg)
-![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/Ss5.jpg)
+![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/ss2.jpg)
+![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/ss3.jpg)
+![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/ss4.jpg)
+![alt text](https://raw.githubusercontent.com/oxygen3301/ministore/master/ss/ss5.jpg)
 
 ---
 ## Run it Yourself
