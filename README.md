@@ -11,6 +11,7 @@ This is a combination of a no-code and e-commerce platform, our users can drop i
 - Create a ecommerce store from your smartphone within 5 minutes
 - Accept payments using Stripe's Connect API
 - Add products and manage orders
+- Authentiation with auth0
 
 ---
 ## Inside the App
@@ -26,3 +27,7 @@ This project is made using React and create-react-app. Follow these steps to run
 2) Go to the project directory and run `npm install`
 3) Run `npm start`
 4) GO to `localhost:3000` on your browser to access the app.
+
+---
+## Note 
+This project is submitted to HackNYU 2022
