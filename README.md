@@ -30,4 +30,4 @@ This project is made using React and create-react-app. Follow these steps to run
 
 ---
 ## Note 
-This project is submitted to HackNYU 2022
+This project was submitted to HackNYU 2022 and won in the financial empowerment track. [Devpost Link](https://devpost.com/software/ministore-build-your-store-under-5-mins/ "Devpost Link to submission")
