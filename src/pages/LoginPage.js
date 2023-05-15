@@ -85,7 +85,10 @@ const LoginPage = () => {
       <footer>
         <div>
           <div>
-            <img src={require("../assets/FooterMinistore.png")}></img>
+            <img
+              alt="footer ministore"
+              src={require("../assets/FooterMinistore.png")}
+            ></img>
           </div>
           <p>
             Creator:{" "}
