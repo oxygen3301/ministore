@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./Dashboard.module.css";
-import LoginButton from "../components/LoginButton";
-import LogoutButton from "../components/LogoutButton";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -9,25 +7,18 @@ import Order from "../components/Order";
 import orders from "../assets/orders";
 
 import { useState } from "react";
+import LoginPage from "./LoginPage";
 
 const Dashboard = () => {
-  const { isAuthenticated, user } = useAuth0();
+  const { isAuthenticated, user, logout } = useAuth0();
   console.log(isAuthenticated);
   const [numord, setNumord] = useState(2);
   const [sales, setSales] = useState(242.11);
 
-  const store_name = "sd ";
+  const store_name = "sd";
 
   if (!isAuthenticated) {
-    return (
-      <div className={styles.section}>
-        <img className={styles.splash} src={require("../assets/splash.png")} />
-        <p className={styles.mini}>
-          Mini<span className={styles.store}>store</span>
-        </p>
-        <LoginButton />
-      </div>
-    );
+    return <LoginPage />;
   } else if (!store_name)
     return (
       <React.Fragment>
@@ -47,14 +38,34 @@ const Dashboard = () => {
           Add Products
         </Link>
         <br />
-        <LogoutButton />
         <Footer active="1" />
       </React.Fragment>
     );
   else
     return (
       <div className={styles.section}>
-        <h2 className={styles.welcome}>Welcome {user.given_name}! 👋</h2>
+        <div className={styles.headerFlex}>
+          <div className={styles.smallFlex}>
+            <h2 className={styles.welcome}>Welcome {user.given_name}! 👋</h2>
+            <p
+              className={styles.logoutHeader}
+              onClick={() => logout({ returnTo: window.location.origin })}
+            >
+              Log Out
+            </p>
+          </div>
+          <div className={styles.nav}>
+            <Link to="/" className={styles.nav_item}>
+              Dashboard
+            </Link>
+            <Link to="/vieworders" className={styles.nav_item}>
+              Orders
+            </Link>
+            <Link to="/configure" className={styles.nav_item}>
+              Configure
+            </Link>
+          </div>
+        </div>
         <div className={styles.cards}>
           <a href="http://127.0.0.1:5500/index.html">
             <div className={`${styles.card1} ${styles.card}`}>
@@ -101,7 +112,6 @@ const Dashboard = () => {
           />
         ))}
 
-        <LogoutButton />
         <div style={{ height: "10vh" }}></div>
         <Footer active="1" />
       </div>

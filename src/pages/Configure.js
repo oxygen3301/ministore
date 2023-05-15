@@ -8,8 +8,8 @@ import ProductCard from "../components/ProductCard";
 import products from "../assets/products";
 
 const Configure = () => {
-  const [storeName, setStoreName] = useState("Starbucks");
   const { isAuthenticated } = useAuth0();
+  const [storeName, setStoreName] = useState("Starbucks");
   const [theme, setTheme] = useState({
     name: "Your Shop",
     color: "green",
@@ -21,12 +21,13 @@ const Configure = () => {
     setTheme({ ...theme, color: e.target.value });
   };
 
-  const updater = (e) => {
-    console.log("Updated");
+  const storeNameUpdater = (e) => {
+    setStoreName(e.target.value);
+    console.log("storename: ", e.target.value);
   };
   if (isAuthenticated) {
     return (
-      <React.Fragment>
+      <div className={styles.section}>
         <h2 className={styles.welcome}>Manage Store</h2>
         <img
           className={styles.uline}
@@ -39,7 +40,7 @@ const Configure = () => {
             <input
               className={styles.inputname}
               type="text"
-              onChange={updater}
+              onChange={storeNameUpdater}
               placeholder={storeName}
             />
           </div>
@@ -55,7 +56,7 @@ const Configure = () => {
           </div>
         </div>
         <label className={styles.payment}>Payment</label>
-        <p className={styles.stripe}>Connect Stripe</p>
+        <p className={styles.stripe}>Stripe (coming soon)</p>
         <p className={styles.save}>Save Changes</p>
         <h2 className={styles.welcome}>Products</h2>
         <img
@@ -80,7 +81,7 @@ const Configure = () => {
         </div>
         <div style={{ height: "10vh" }}></div>
         <Footer active="3" />
-      </React.Fragment>
+      </div>
     );
   }
 };

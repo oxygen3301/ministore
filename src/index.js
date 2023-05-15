@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
-import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
   <Auth0Provider
@@ -11,9 +10,7 @@ ReactDOM.render(
     clientId="alqlsr2XUTxw7cjdbjJiIhl40MVm6EGo"
     redirectUri="http://localhost:3000/"
   >
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
+    <App />
   </Auth0Provider>,
   document.getElementById("root")
 );

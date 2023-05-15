@@ -83,3 +83,10 @@ label {
   display: block;
   text-align: center;
 }
+
+/* Write a media query for larger screens */
+@media (min-width: 768px) {
+  .section{ 
+    margin: 20px 360px;
+  }
+}

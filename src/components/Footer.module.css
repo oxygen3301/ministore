@@ -21,3 +21,11 @@
 .footer-website {
   text-align: left;
 }
+/* Write a media query for larger screens */
+@media (min-width: 768px) {
+  .footer{
+    display: none;
+  }
+
+
+}
